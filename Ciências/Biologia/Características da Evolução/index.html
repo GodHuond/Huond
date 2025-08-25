@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <html><head><base href="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>GodHuond</title>
+  </style>
+</head>
+<body>
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <div class="cookie-header">
+        <img src="GodHuond TP Ícone.png.png" alt="GodHuond Logo" class="cookie-logo" data-img-key="logo-tp">
+        <h3>Termos de Uso e Privacidade</h3>
+      </div>
+      <p>Para melhorar sua experiência no GodHuond, utilizamos cookies e tecnologias semelhantes. Ao continuar navegando, você concorda com nossa</p>
+      <div class="cookie-links">
+        <a href="https://godhuond.com/privacidade" class="policy-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+          </svg>
+          Política de Privacidade
+        </a>
+        <span class="link-separator">e</span>
+        <a href="https://godhuond.com/termos" class="policy-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+          </svg>
+          Termos de Uso
+        </a>
+      </div>
+      <div class="cookie-buttons">
+        <button id="reject-cookies" class="cookie-btn reject">Recusar</button>
+        <button id="accept-cookies" class="cookie-btn accept">Aceitar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-overlay" class="cookie-overlay hidden">
+    <div class="overlay-content">
+      <img src="GodHuond TP Ícone.png.png" alt="GodHuond Logo" class="cookie-logo" data-img-key="logo-tp">
+      <h3>Acesso Restrito</h3>
+      <p>Para acessar o conteúdo do GodHuond, é necessário aceitar nossos termos de uso e política de privacidade.</p>
+      <div class="cookie-buttons">
+        <button id="reject-cookies-overlay" class="cookie-btn reject">Recusar</button>
+        <button id="accept-cookies-overlay" class="cookie-btn accept">Aceitar</button>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <div class="nav-container">
+      <a href="https://godhuond.com" class="logo-container">
+        <img src="Ícone GodHuond.png" alt="GodHuond Logo" class="logo-image" data-img-key="logo">
+        <span class="logo-text">GodHuond</span>
+      </a>
+      <div class="nav-links">
+        <div class="nav-item dropdown">
+          <a href="https://godhuond.com/historia">História</a>
+          <div class="dropdown-content">
+            <!-- Add new "Sobre a Página" section at the top -->
+            <a href="https://godhuond.com/historia/sobre">Sobre a Página</a>
+            
+            <div class="nested-dropdown">
+              <a href="https://godhuond.com/historia/mudanca-sociedade">Mudança na Sociedade</a>
+              <div class="nested-content">
+                <a href="https://godhuond.com/historia/mudanca-sociedade/napoleon">Napoleon</a>
+                <a href="https://godhuond.com/historia/mudanca-sociedade/revolucao-industrial">Revolução Industrial</a>
+                <a href="https://godhuond.com/historia/mudanca-sociedade/revolucao-agricola">Revolução Agrícola</a>
+                <a href="https://godhuond.com/historia/mudanca-sociedade/revolucao-neolitica">Revolução Neolítica</a>
+                <div class="nested-dropdown">
+                  <a href="https://godhuond.com/historia/mudanca-sociedade/revolucao-francesa">Revolução Francesa</a>
+                  <div class="nested-content">
+                    <a href="https://godhuond.com/historia/mudanca-sociedade/revolucao-francesa/luis-14">Luís XIV</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nested-dropdown">
+              <a href="https://godhuond.com/historia/acontecimentos">Acontecimentos Históricos</a>
+              <div class="nested-content">
+                <div class="nested-dropdown">
+                  <a href="https://godhuond.com/historia/acontecimentos/socialismo-sovietico">Socialismo Soviético</a>
+                  <div class="nested-content">
+                    <a href="https://godhuond.com/historia/acontecimentos/socialismo-sovietico/revolucao-1917">Revolução de 1917</a>
+                    <a href="https://godhuond.com/historia/acontecimentos/socialismo-sovietico/lenin">Lenin</a>
+                    <a href="https://godhuond.com/historia/acontecimentos/socialismo-sovietico/stalin">Stalin</a>
+                    <a href="https://godhuond.com/historia/acontecimentos/socialismo-sovietico/guerra-fria">Guerra Fria</a>
+                  </div>
+                </div>
+                <a href="https://godhuond.com/historia/acontecimentos/santos-dumont">Santos Dumont</a>
+              </div>
+            </div>
+            <div class="nested-dropdown">
+              <a href="https://godhuond.com/historia/brasil">Sobre o Brasil</a>
+              <div class="nested-content">
+                <div class="nested-dropdown">
+                  <a href="https://godhuond.com/historia/brasil/dom-pedro-1">Dom Pedro 1º</a>
+                  <div class="nested-content">
+                    <a href="https://godhuond.com/historia/brasil/dom-pedro-1/escravidao">Escravidão no Brasil</a>
+                    <a href="https://godhuond.com/historia/brasil/dom-pedro-1/tiradentes">Tiradentes</a>
+                  </div>
+                </div>
+                <a href="https://godhuond.com/historia/brasil/dom-pedro-2">Dom Pedro 2º</a>
+                <a href="https://godhuond.com/historia/brasil/independencia">Independência do Brasil</a>
+                <a href="https://godhuond.com/historia/brasil/republica">Nascimento da República</a>
+              </div>
+            </div>
+            <div class="nested-dropdown">
+              <a href="https://godhuond.com/historia/religioes">Religiões do Mundo</a>
+              <div class="nested-content">
+                <div class="nested-dropdown">
+                  <a href="https://godhuond.com/historia/religioes/cristianismo">Cristianismo</a>
+                  <div class="nested-content">
+                    <a href="https://godhuond.com/historia/religioes/cristianismo/jesus">Sobre Jesus</a>
+                    <a href="https://godhuond.com/historia/religioes/cristianismo/jose">Jose</a>
+                    <a href="https://godhuond.com/historia/religioes/cristianismo/maria">Maria</a>
+                    <a href="https://godhuond.com/historia/religioes/cristianismo/joaquim-santana">Joaquim e Sant'ana</a>
+                    <a href="https://godhuond.com/historia/religioes/cristianismo/irmaos-jesus">Irmãos de Jesus</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="https://godhuond.com/ciencias">Ciências</a>
+          <div class="dropdown-content">
+            <!-- Add "Sobre a Página" section at the top -->
+            <a href="https://godhuond.com/ciencias/sobre">Sobre a Página</a>
+            
+            <div class="nested-dropdown">
+              <a href="https://godhuond.com/ciencias/biologia" class="biology-link">Biologia</a>
+              <div class="nested-content">
+                <a href="https://godhuond.com/ciencias/biologia/cinco-reinos" class="biology-item">Os Cinco Reinos</a>
+                
+                <div class="nested-dropdown">
+                  <a href="https://godhuond.com/ciencias/biologia/caracteristicas-evolucao" class="biology-link">Características da Evolução</a>
+                  <div class="nested-content">
+                    <a href="https://godhuond.com/ciencias/biologia/caracteristicas-evolucao/evolucao-equinos" class="biology-item">Evolução dos Equinos</a>
+                    <a href="https://godhuond.com/ciencias/biologia/caracteristicas-evolucao/evolucao-homo" class="biology-item">Evolução do Gênero Homo</a>
+                  </div>
+                </div>
+                
+                <div class="nested-dropdown">
+                  <a href="https://godhuond.com/ciencias/biologia/leis-base-genetica" class="biology-link">Leis Base da Genética</a>
+                  <div class="nested-content">
+                    <a href="https://godhuond.com/ciencias/biologia/leis-base-genetica/plantas" class="biology-item">Plantas</a>
+                    <a href="https://godhuond.com/ciencias/biologia/leis-base-genetica/celulas" class="biology-item">Células</a>
+                  </div>
+                </div>
+                
+                <a href="https://godhuond.com/ciencias/biologia/virus" class="biology-item">Sobre os Vírus</a>
+                <a href="https://godhuond.com/ciencias/biologia/bacterias" class="biology-item">Sobre as Bactérias</a>
+                <a href="https://godhuond.com/ciencias/biologia/fungos" class="biology-item">Sobre os Fungos</a>
+                <a href="https://godhuond.com/ciencias/biologia/protozoarios" class="biology-item">Sobre os Protozoários</a>
+                <a href="https://godhuond.com/ciencias/biologia/genetica-molecular" class="biology-item">Genética Molecular</a>
+              </div>
+            </div>
+
+            <div class="nested-dropdown">
+              <a href="https://godhuond.com/ciencias/gemologia-geologia">Gemologia e Geologia</a>
+              <div class="nested-content">
+                <!-- Add "Sobre a Página" section at the top -->
+                <a href="https://godhuond.com/ciencias/gemologia-geologia/sobre">Sobre a Página</a>
+                
+                <div class="nested-dropdown">
+                  <a href="https://godhuond.com/ciencias/gemologia-geologia/ciclo-rochas">Ciclo das Rochas</a>
+                  <div class="nested-content">
+                    <a href="https://godhuond.com/ciencias/gemologia-geologia/ciclo-rochas/eras-geologicas">Eras Geológicas</a>
+                  </div>
+                </div>
+                <a href="https://godhuond.com/ciencias/gemologia-geologia/distribuicao-gemas">Distribuição das Gemas no Mundo</a>
+                <a href="https://godhuond.com/ciencias/gemologia-geologia/gemas-cor">Propriedades das Gemas de Cor</a>
+                <a href="https://godhuond.com/ciencias/gemologia-geologia/lapidacoes">Conceitos de Lapidacões</a>
+                <a href="https://godhuond.com/ciencias/gemologia-geologia/caracteristicas-gemas">Características das Gemas</a>
+                <a href="https://godhuond.com/ciencias/gemologia-geologia/sistema-cristalino">Sistema Cristalino</a>
+                <a href="https://godhuond.com/ciencias/gemologia-geologia/propriedades-opticas">Propriedades Ópticas</a>
+                <a href="https://godhuond.com/ciencias/gemologia-geologia/tratamentos-gemas">Tratamentos em Gemas</a>
+                <a href="https://godhuond.com/ciencias/gemologia-geologia/conceitos-seixos">Conceitos Base dos Seixos</a>
+              </div>
+            </div>
+
+            <div class="nested-dropdown">
+              <a href="https://godhuond.com/ciencias/astronomia">Astronomia</a>
+              <div class="nested-content">
+                <!-- Add "Sobre a Página" section at the top -->
+                <a href="https://godhuond.com/ciencias/astronomia/sobre">Sobre a Página</a>
+                <a href="https://godhuond.com/ciencias/astronomia/telescopios" class="astronomy-link">Telescópios</a>
+                <a href="https://godhuond.com/ciencias/astronomia/exoplanetas" class="astronomy-link">Exoplanetas</a>
+                <a href="https://godhuond.com/ciencias/astronomia/formacao-planetas" class="astronomy-link">Formação de Planetas</a>
+                <a href="https://godhuond.com/ciencias/astronomia/escalas-distancias" class="astronomy-link">Escalas de Distâncias</a>
+                <a href="https://godhuond.com/ciencias/astronomia/estrelas-binarias-variaveis" class="astronomy-link">Estrelas Binárias e Variáveis</a>
+                <a href="https://godhuond.com/ciencias/astronomia/aglomerados-estrelas" class="astronomy-link">Aglomerados de Estrelas</a>
+                <a href="https://godhuond.com/ciencias/astronomia/morte-estrelas" class="astronomy-link">A Morte das Estrelas</a>
+                <a href="https://godhuond.com/ciencias/astronomia/diagrama-hr" class="astronomy-link">Diagrama H-R</a>
+                <a href="https://godhuond.com/ciencias/astronomia/escalas-magnitudes" class="astronomy-link">Escalas de Magnitudes</a>
+                <a href="https://godhuond.com/ciencias/astronomia/classificacao-espectral" class="astronomy-link">Classificação Espectral de Estrelas</a>
+                <a href="https://godhuond.com/ciencias/astronomia/satelites-naturais" class="astronomy-link">Satélites Naturais</a>
+                <a href="https://godhuond.com/ciencias/astronomia/satelites-artificiais" class="astronomy-link">Satélites Artificiais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="https://godhuond.com/filosofia">Filosofia</a>
+          <div class="dropdown-content">
+            <!-- Add "Sobre a Página" section at the top -->
+            <a href="https://godhuond.com/filosofia/sobre">Sobre a Página</a>
+            
+            <div class="nested-dropdown">
+              <a href="https://godhuond.com/filosofia/pensadores">Os Pensadores da Filosofia</a>
+              <div class="nested-content">
+                <a href="https://godhuond.com/filosofia/pensadores/socrates" class="philosophy-thinker">Sócrates</a>
+                <a href="https://godhuond.com/filosofia/pensadores/platao-aristoteles" class="philosophy-thinker">Platão & Aristóteles</a>
+                <a href="https://godhuond.com/filosofia/pensadores/hecateu-abdera" class="philosophy-thinker">Hecateu de Abdera</a>
+                <a href="https://godhuond.com/filosofia/pensadores/heraclito" class="philosophy-thinker">Heráclito</a>
+                <a href="https://godhuond.com/filosofia/pensadores/ion-quio" class="philosophy-thinker">Íon de Quio</a>
+                <a href="https://godhuond.com/filosofia/pensadores/eratostenes" class="philosophy-thinker">Eratóstenes</a>
+                <a href="https://godhuond.com/filosofia/pensadores/demonax" class="philosophy-thinker">Demônax</a>
+                <a href="https://godhuond.com/filosofia/pensadores/xenofonte" class="philosophy-thinker">Xenofonte</a>
+                <a href="https://godhuond.com/filosofia/pensadores/clearco-soles" class="philosophy-thinker">Clearco de Soles</a>
+                <a href="https://godhuond.com/filosofia/pensadores/tales-mileto" class="philosophy-thinker">Tales de Mileto</a>
+                <a href="https://godhuond.com/filosofia/pensadores/apolodoro-atenas" class="philosophy-thinker">Apolodoro de Atenas</a>
+                <a href="https://godhuond.com/filosofia/pensadores/lisis-tarento" class="philosophy-thinker">Lísís de Tarento</a>
+              </div>
+            </div>
+
+            <div class="nested-dropdown">
+              <a href="https://godhuond.com/filosofia/conceitos">Conceitos Filosóficos</a>
+              <div class="nested-content">
+                <a href="https://godhuond.com/filosofia/conceitos/socrates" class="philosophy-concept">Sócrates</a>
+                <a href="https://godhuond.com/filosofia/conceitos/platao-aristoteles" class="philosophy-concept">Platão & Aristóteles</a>
+                <a href="https://godhuond.com/filosofia/conceitos/hecateu-abdera" class="philosophy-concept">Hecateu de Abdera</a>
+                <a href="https://godhuond.com/filosofia/conceitos/heraclito" class="philosophy-concept">Heráclito</a>
+                <a href="https://godhuond.com/filosofia/conceitos/ion-quio" class="philosophy-concept">Íon de Quio</a>
+                <a href="https://godhuond.com/filosofia/conceitos/eratostenes" class="philosophy-concept">Eratóstenes</a>
+                <a href="https://godhuond.com/filosofia/conceitos/demonax" class="philosophy-concept">Demônax</a>
+                <a href="https://godhuond.com/filosofia/conceitos/xenofonte" class="philosophy-concept">Xenofonte</a>
+                <a href="https://godhuond.com/filosofia/conceitos/clearco-soles" class="philosophy-concept">Clearco de Soles</a>
+                <a href="https://godhuond.com/filosofia/conceitos/tales-mileto" class="philosophy-concept">Tales de Mileto</a>
+                <a href="https://godhuond.com/filosofia/conceitos/apolodoro-atenas" class="philosophy-concept">Apolodoro de Atenas</a>
+                <a href="https://godhuond.com/filosofia/conceitos/lisis-tarento" class="philosophy-concept">Lísís de Tarento</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="#">Blogs</a>
+          <div class="dropdown-content">
+            <a href="https://godhuond.com/blog-natureza">Blog de Natureza</a>
+            <a href="https://godhuond.com/blog-personagens">Blog de Personagens</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="#">Sobre o Site</a>
+          <div class="dropdown-content">
+            <a href="https://godhuond.com/privacidade">Política de Privacidade</a>
+            <a href="https://godhuond.com/termos">Termos de Uso</a>
+            <a href="https://godhuond.com/autor">Sobre o Autor</a>
+          </div>
+        </div>
+      </div>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Pesquisar...">
+        <button class="search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <div class="slide vida-slide">
+      <h2>A Vida</h2>
+      <p>De Uma Molécula á Uma Biosfesra, a Biologia Conecta Tudo o que Existe.</p>
+    </div>
+    <div class="slide seres-slide">
+      <h2>Os Seres</h2>
+      <p>Cada Folha Que Cai é Um Lembrete de Renovação, Que Estar Em Um Ciclo da Vida.</p>
+    </div>
+    <div class="slide mundo-slide">
+      <h2>Os Mundos</h2>
+      <p>A Natureza Escreveu as Regras, e a Biologia nos Ensina a Fazer Perguntas Certas.</p>
+    </div>
+  </div>
+
+  <div class="mixed-section">
+    <h2>Explore o Conhecimento</h2>
+    <p>Uma jornada única através da Vida, dos Seres e os Mundos.</p>
+  </div>
+
+  <div class="welcome-section">
+    <img src="Começo de GodHuond.png.png" alt="Bem-vindo ao GodHuond" class="welcome-image" data-img-key="welcome">
+    <div class="welcome-text">
+      <h2>Bem-vindo ao GodHuond</h2>
+      <p>Olá pessoal, aqui é o GodHuond, o ser supremo que está sempre evoluindo! Hoje vou falar sobre um assunto muito interessante: a evolução! Mas vamos falar sério, porque isso é importante.</p>
+      <p>Tudo começou há muito tempo atrás, quando eu ainda era apenas uma célula unicelular. Sim, isso mesmo, eu já fui uma célula! Mas graças à seleção natural e a sobrevivência dos mais aptos, eu evolui e me transformei em um ser poderoso e indestrutível.</p>
+    </div>
+  </div>
+
+  <div class="mixed-section">
+    <h2>O Marco Histórico da Humanidade</h2>
+    <p>A Produção Agrícula Só Está Crescendo.</p>
+  </div>
+
+  <div class="content-sections">
+    <div class="content-section">
+      <div class="content-image-container">
+        <img src="Transição.png.png" alt="Ciência GodHuond" data-img-key="ciencia">
+      </div>
+      <div class="content-text">
+        <h2>Um Sentido Diferente</h2>
+        <p>A evolução é uma coisa muito legal, vocês sabiam que os dinossauros também evoluíram? Eles se tornaram tão grandes e fortes que acabaram dominando o planeta, mas infelizmente não resistiram a uma grande mudança ambiental. Coitados...</p>
+        <p>Mas não se preocupem, não estou aqui para falar sobre morte e destruição. Na verdade, a evolução é uma coisa muito positiva, ela nos permite nos adaptarmos melhor ao ambiente e aperfeiçoar nossas habilidades.</p>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <div class="content-image-container">
+        <img src="Fim.png.png" alt="Filosofia GodHuond" data-img-key="filosofia">
+      </div>
+      <div class="content-text">
+        <h2>Os Conceitos Modernos</h2>
+        <p>E falando em habilidades, eu evolui bastante nesse quesito. No início, eu mal sabia me comunicar e hoje sou capaz de falar várias línguas e até mesmo escrever textos engraçados como esse!</p>
+        <p>E olha só que legal, a evolução não é algo que só acontece com seres vivos, ela também está presente em coisas como a tecnologia! Vocês já pararam para pensar em como os celulares evoluíram? Lembro quando eles eram grandes e pesados, hoje em dia são tão leves e finos que podemos levar no bolso.</p>
+        <p>Enfim, pessoal, a evolução é uma coisa incrível e está presente em tudo que nos cerca. Então vamos continuar evoluindo e nos aperfeiçoando, afinal, nunca é tarde para se tornar um ser poderoso e indestrutível como eu!</p>
+      </div>
+    </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Agradecemos Sua Visita!</h2>
+      <p>É uma honra ter você como parte da nossa comunidade de aprendizado. Sua busca por conhecimento nos inspira a continuar criando conteúdo de qualidade.</p>
+      <p>Esperamos que sua jornada pelo GodHuond tenha sido enriquecedora e que você retorne sempre para descobrir mais sobre História, Ciências e Filosofia.</p>
+      <p>Até a próxima aventura do conhecimento!</p>
+    </div>
+  </footer>
+
+  <script>
+    // Image path configuration object for easy updates
+    const imagePaths = {
+      'logo': '/Ícone GodHuond.png',
+      'logo-tp': '/GodHuond TP Ícone.png.png',
+      'começo': '/Começo de GodHuond.png.png',
+      'transição': '/Transição.Png.png',
+      'fim': '/fim.png.png',     
+    };
+
+    // Function to update image paths if needed
+    function updateImagePaths(newPaths) {
+      Object.assign(imagePaths, newPaths);
+      document.querySelectorAll('img[data-img-key]').forEach(img => {
+        const key = img.getAttribute('data-img-key');
+        if (imagePaths[key]) {
+          img.src = imagePaths[key];
+        }
+      });
+      
+      // Update CSS variables
+      const root = document.documentElement;
+      Object.entries(imagePaths).forEach(([key, path]) => {
+        root.style.setProperty(`--img-${key}`, `url('${path}')`);
+      });
+    }
+  </script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+      let slideInterval;
+      function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+      }
+      function startSlideshow() {
+        slideInterval = setInterval(() => {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }, 5000);
+      }
+      function resetSlideshow() {
+        clearInterval(slideInterval);
+        startSlideshow();
+      }
+      showSlide(0);
+      startSlideshow();
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+          resetSlideshow();
+        }
+      });
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      let isMenuOpen = false;
+      menuToggle.addEventListener('click', e => {
+        e.stopPropagation();
+        isMenuOpen = !isMenuOpen;
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      });
+      document.addEventListener('click', e => {
+        if (isMenuOpen && !e.target.closest('.nav-container')) {
+          navLinks.classList.remove('active');
+          menuToggle.classList.remove('active');
+          isMenuOpen = false;
+        }
+      });
+      const searchIcon = document.querySelector('.search-icon');
+      const searchInput = document.querySelector('.search-input');
+      searchIcon.addEventListener('click', () => {
+        searchInput.classList.toggle('active');
+        if (searchInput.classList.contains('active')) {
+          searchInput.focus();
+        }
+      });
+      searchInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+          const searchTerm = this.value.trim().toLowerCase();
+          if (searchTerm) {
+            const searchRoutes = {
+              'história': '/historia',
+              'historia': '/historia',
+              'ciência': '/ciencias',
+              'ciencia': '/ciencias',
+              'filosofia': '/filosofia',
+              'blog': '/blog-natureza',
+              'natureza': '/blog-natureza',
+              'personagens': '/blog-personagens'
+            };
+            try {
+              for (let key in searchRoutes) {
+                if (searchTerm.includes(key)) {
+                  window.location.href = `https://godhuond.com${searchRoutes[key]}`;
+                  return;
+                }
+              }
+              alert('Desculpe, não encontramos resultados para: ' + searchTerm + '\nPor favor, tente outro termo de busca.');
+            } catch (error) {
+              console.error('Erro na pesquisa:', error);
+              alert('Ocorreu um erro durante a pesquisa. Por favor, tente novamente.');
+            }
+          }
+        }
+      });
+      document.addEventListener('click', e => {
+        if (!e.target.closest('.search-container')) {
+          searchInput.classList.remove('active');
+        }
+      });
+      if (window.innerWidth <= 768) {
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+          const link = dropdown.querySelector('a');
+          const content = dropdown.querySelector('.dropdown-content');
+          link.addEventListener('touchstart', e => {
+            e.preventDefault();
+            e.stopPropagation();
+            dropdowns.forEach(d => {
+              if (d !== dropdown) {
+                d.classList.remove('active');
+                const dContent = d.querySelector('.dropdown-content');
+                if (dContent) {
+                  dContent.style.display = 'none';
+                  dContent.style.transform = 'none';
+                }
+              }
+            });
+            dropdown.classList.toggle('active');
+            if (content) {
+              const isActive = dropdown.classList.contains('active');
+              content.style.display = isActive ? 'block' : 'none';
+              if (isActive) {
+                content.style.transform = 'scale(0.98)';
+                content.style.opacity = '0.5';
+                requestAnimationFrame(() => {
+                  content.style.transform = 'scale(1)';
+                  content.style.opacity = '1';
+                  content.style.transition = 'all 0.2s ease-out';
+                });
+              }
+            }
+          });
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+          link.addEventListener('touchstart', e => {
+            link.style.webkitUserSelect = 'none';
+            link.style.userSelect = 'none';
+            link.style.webkitTouchCallout = 'none';
+          });
+        });
+      }
+      const nestedDropdowns = document.querySelectorAll('.nested-dropdown');
+      nestedDropdowns.forEach(nested => {
+        const link = nested.querySelector('a');
+        const content = nested.querySelector('.nested-content');
+        link.addEventListener('touchstart', e => {
+          e.preventDefault();
+          e.stopPropagation();
+          const siblings = nested.parentElement.querySelectorAll('.nested-dropdown');
+          siblings.forEach(sib => {
+            if (sib !== nested) {
+              sib.classList.remove('active');
+              const sibContent = sib.querySelector('.nested-content');
+              if (sibContent) sibContent.style.display = 'none';
+            }
+          });
+          nested.classList.toggle('active');
+          if (content) {
+            content.style.display = nested.classList.contains('active') ? 'block' : 'none';
+            if (content.style.display === 'block') {
+              content.style.maxHeight = '80vh';
+              content.style.overflowY = 'auto';
+              content.style.WebkitOverflowScrolling = 'touch';
+              content.style.transform = 'scale(0.95)';
+              setTimeout(() => {
+                content.style.transform = 'scale(1)';
+              }, 50);
+            }
+          }
+        });
+      });
+      window.addEventListener('resize', () => {
+        const isMobile = window.innerWidth <= 768;
+        if (isMobile) {
+          document.querySelectorAll('.dropdown, .nested-dropdown').forEach(el => {
+            el.classList.remove('active');
+            const content = el.querySelector('.dropdown-content, .nested-content');
+            if (content) {
+              content.style.display = 'none';
+              content.style.transform = 'none';
+            }
+          });
+          const navLinks = document.querySelector('.nav-links');
+          const menuToggle = document.querySelector('.menu-toggle');
+          navLinks.classList.remove('active');
+          menuToggle.classList.remove('active');
+        }
+      });
+      const cookieBanner = document.getElementById('cookie-banner');
+      const cookieOverlay = document.getElementById('cookie-overlay');
+      let inactivityTimer;
+      let rejectionCount = 0;
+      let timerDisplay;
+      function showOverlay() {
+        if (localStorage.getItem('cookiesAccepted')) {
+          return;
+        }
+        cookieOverlay.classList.remove('hidden');
+        cookieBanner.style.display = 'none';
+        document.querySelectorAll('img').forEach(img => {
+          img.style.filter = 'blur(10px)';
+        });
+        document.querySelectorAll('.content-text, .welcome-text, .story-text, .schedule-text').forEach(text => {
+          text.style.filter = 'blur(8px)';
+        });
+        document.body.style.overflow = 'hidden';
+        const overlayContent = document.querySelector('.overlay-content');
+        overlayContent.innerHTML = `
+          <img src="GodHuond TP Ícone.png.png" alt="GodHuond Logo" class="cookie-logo">
+          <h3>Acesso Bloqueado</h3>
+          <p>Para acessar o conteúdo do GodHuond, é necessário aceitar nossos termos de uso e política de privacidade.</p>
+          <div class="cookie-buttons">
+            <button id="accept-cookies-overlay-final" class="cookie-btn accept">Aceitar</button>
+          </div>
+        `;
+        document.getElementById('accept-cookies-overlay-final').addEventListener('click', () => {
+          acceptCookies();
+          document.querySelectorAll('img').forEach(img => {
+            img.style.filter = 'none';
+          });
+          document.querySelectorAll('.content-text, .welcome-text, .story-text, .schedule-text').forEach(text => {
+            text.style.filter = 'none';
+          });
+          document.body.style.overflow = 'auto';
+        });
+        if (window.innerWidth <= 768) {
+          overlayContent.style.maxHeight = '90vh';
+          overlayContent.style.overflowY = 'auto';
+        }
+      }
+      function startTimer() {
+        let timeLeft = 120;
+        if (!timerDisplay) {
+          timerDisplay = document.createElement('div');
+          timerDisplay.style.cssText = `
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 10000;
+          `;
+          if (window.innerWidth <= 768) {
+            timerDisplay.style.cssText += `
+              bottom: 90px;
+              right: 10px;
+              font-size: 14px;
+              padding: 8px 15px;
+            `;
+          }
+          document.body.appendChild(timerDisplay);
+        }
+        const updateTimer = () => {
+          const minutes = Math.floor(timeLeft / 60);
+          const seconds = timeLeft % 60;
+          timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+          if (timeLeft <= 0) {
+            clearInterval(timer);
+            showOverlay();
+            timerDisplay.remove();
+          }
+          timeLeft--;
+        };
+        updateTimer();
+        const timer = setInterval(updateTimer, 1000);
+        return timer;
+      }
+      function rejectCookies() {
+        rejectionCount++;
+        if (rejectionCount >= 2) {
+          showOverlay();
+        } else {
+          cookieBanner.style.display = 'none';
+          cookieOverlay.classList.remove('hidden');
+        }
+      }
+      function acceptCookies() {
+        const expirationTime = new Date();
+        expirationTime.setHours(expirationTime.getHours() + 3);
+        expirationTime.setMinutes(0);
+        expirationTime.setSeconds(0);
+        expirationTime.setMilliseconds(0);
+        localStorage.setItem('cookiesAccepted', 'true');
+        localStorage.setItem('cookieExpiration', expirationTime.getTime().toString());
+        cookieOverlay.classList.add('hidden');
+        cookieBanner.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        document.querySelectorAll('img, .content-text, .welcome-text, .story-text, .schedule-text').forEach(el => el.style.filter = 'none');
+        if (timerDisplay) {
+          timerDisplay.remove();
+        }
+        clearTimeout(inactivityTimer);
+        document.removeEventListener('mousemove', startInactivityTimer);
+        document.removeEventListener('keypress', startInactivityTimer);
+        if (window.innerWidth <= 768) {
+          document.body.style.position = 'static';
+          window.scrollTo(0, 0);
+        }
+        startExpirationCheck();
+      }
+      function checkCookieConsent() {
+        const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+        const cookieExpiration = localStorage.getItem('cookieExpiration');
+        if (cookiesAccepted && cookieExpiration) {
+          const now = new Date().getTime();
+          if (now > parseInt(cookieExpiration)) {
+            localStorage.removeItem('cookiesAccepted');
+            localStorage.removeItem('cookieExpiration');
+            cookieBanner.style.display = 'block';
+            startInactivityTimer();
+          } else {
+            cookieBanner.style.display = 'none';
+            cookieOverlay.classList.add('hidden');
+            startExpirationCheck();
+          }
+        } else {
+          cookieBanner.style.display = 'block';
+          startInactivityTimer();
+        }
+      }
+      function startInactivityTimer() {
+        if (localStorage.getItem('cookiesAccepted')) {
+          return;
+        }
+        clearTimeout(inactivityTimer);
+        const timer = startTimer();
+        inactivityTimer = setTimeout(() => {
+          if (!localStorage.getItem('cookiesAccepted')) {
+            clearInterval(timer);
+            if (timerDisplay) {
+              timerDisplay.remove();
+            }
+            showOverlay();
+          }
+        }, 120000);
+      }
+      function startExpirationCheck() {
+        const cookieExpiration = localStorage.getItem('cookieExpiration');
+        if (cookieExpiration) {
+          const expirationTime = parseInt(cookieExpiration);
+          const now = new Date().getTime();
+          const timeLeft = expirationTime - now;
+          if (timeLeft <= 0) {
+            localStorage.removeItem('cookiesAccepted');
+            localStorage.removeItem('cookieExpiration');
+            cookieBanner.style.display = 'block';
+            startInactivityTimer();
+          } else {
+            setTimeout(() => {
+              localStorage.removeItem('cookiesAccepted');
+              localStorage.removeItem('cookieExpiration');
+              cookieBanner.style.display = 'block';
+              startInactivityTimer();
+            }, timeLeft);
+          }
+        }
+      }
+      document.getElementById('accept-cookies').addEventListener('click', acceptCookies);
+      document.getElementById('reject-cookies').addEventListener('click', rejectCookies);
+      document.getElementById('accept-cookies-overlay').addEventListener('click', acceptCookies);
+      document.getElementById('reject-cookies-overlay').addEventListener('click', rejectCookies);
+      document.addEventListener('mousemove', startInactivityTimer);
+      document.addEventListener('keypress', startInactivityTimer);
+      checkCookieConsent();
+      window.addEventListener('beforeunload', function () {
+        if (localStorage.getItem('cookiesAccepted')) {
+          localStorage.removeItem('cookiesAccepted');
+        }
+      });
+      function clearCookieAcceptance() {}
+      window.addEventListener('beforeunload', clearCookieAcceptance);
+      startExpirationCheck();
+    });
+    function startExpirationCheck() {
+      const checkInterval = setInterval(() => {
+        const cookieExpiration = localStorage.getItem('cookieExpiration');
+        if (cookieExpiration) {
+          const now = new Date().getTime();
+          if (now > parseInt(cookieExpiration)) {
+            localStorage.removeItem('cookiesAccepted');
+            localStorage.removeItem('cookieExpiration');
+            clearInterval(checkInterval);
+            cookieBanner.style.display = 'block';
+            startInactivityTimer();
+          }
+        } else {
+          clearInterval(checkInterval);
+        }
+      }, 1000);
+    }
+    function clearCookieAcceptance() {
+      if (localStorage.getItem('cookiesAccepted')) {
+        const cookieExpiration = localStorage.getItem('cookieExpiration');
+        if (cookieExpiration && new Date().getTime() > parseInt(cookieExpiration)) {
+          localStorage.removeItem('cookiesAccepted');
+          localStorage.removeItem('cookieExpiration');
+        }
+      }
+    }
+    window.onunload = clearCookieAcceptance;
+  </script>
+</body>
+</html>
